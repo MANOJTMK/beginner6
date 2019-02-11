@@ -1,35 +1,13 @@
-#include <stdio.h>
-
- 
-
-int main(void) 
-
+int main()
 {
-
-int x,y,temp;
-
-printf("\n enter two numbers to swap:");
-
-scanf("%d %d",&x,&y);
-
-printf("\n before swapping:");
-
-printf("\nx=%d",x);
-
-printf("\ny=%d",y);
-
-temp=x;
-
-x=y;
-
-y=temp;
-
-printf("\n after swapping:");
-
-printf("\nx=%d",x);
-
-printf("\ny=%d",y);
-
-return 0;
-
+	int a,n,j=0,b;
+	scanf("%d%d",&a,&n);
+	while(a)
+	{
+		b=a%10;
+		if(b==n)
+		j++;
+		a=a/10;
+	}
+	printf("%d",j);
 }
